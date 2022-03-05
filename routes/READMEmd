@@ -1,0 +1,68 @@
+### The Calendar APP - API :
+
+**Back end API , this api connects to a front end wich allows to create, update and delete events on a calendar also 
+allows to create new users in a login system encripting the user and pasword  in this system the user whon had created
+the event is the owner that means no one user will update it or delete it out  **
+ 
+you're able to use this API, 
+
+methods :
+
+get-
+post-
+delete-
+
+path's:
+
+Routes :
+    └───routes
+        auth.js
+        events.js
+
+Validations :
+   └───controllers
+       auth.js 
+       events.js
+
+BD builder's :
+   └───models
+       Evento.js
+       Usuario.js
+
+
+master.
+│  
+│   index.js
+│   package-lock.json
+│   package.json
+│
+├───controllers
+│       auth.js
+│       events.js
+│
+├───database
+│       config.js
+│
+├───helpers
+│       isDate.js
+│       jwt.js
+│
+├───middlewares
+│       validar-campos.js
+│       validar-jwt.js
+│
+├───models
+│       Evento.js
+│       Usuario.js
+│
+├───public
+│       index.html
+│       styles.css
+│
+└───routes
+        auth.js
+        events.js
+        unitled1
+
+
+@octocat :+1: KEEP CODING !!!! :woozy_face:
