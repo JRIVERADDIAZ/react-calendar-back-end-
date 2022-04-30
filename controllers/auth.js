@@ -5,7 +5,7 @@ const { generarJWT } = require('../helpers/jwt')
 
 const crearUsuario = async (req, res = response) => {
     //data request
-    const {  email, pasword } = req.body
+    const { email, pasword } = req.body
     // data 
 
     try {
@@ -92,15 +92,17 @@ const loginUsuario = async (req, res = response) => {
 
 }
 
-const revalidarToken = async(req, res) => {
+const revalidarToken = async (req, res) => {
     //data request 
     const { uid, name } = req
 
-const token = await generarJWT(uid, name)
+    const token = await generarJWT(uid, name)
 
     res.json({
         "ok": true,
-       token
+        "uid": uid,
+        "name": name,
+        token,
     })
 
 }

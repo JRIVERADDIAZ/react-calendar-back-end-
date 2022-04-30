@@ -10,7 +10,7 @@ const generarJWT = (uid, name) => {
             expiresIn: '2h'
         }, (err, token) => {
             if (err) {
-                console - log(err)
+                console.log(err)
                 reject('no se pudo genberar el token')
             }
             resolve( token )
