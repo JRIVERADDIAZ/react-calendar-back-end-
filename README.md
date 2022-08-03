@@ -26,6 +26,23 @@ Allows to create, update and delete users on a firebase authorization sistem
 |localhost:4001/api/events/ | PUT |POST  REFRESH EVENTS |  YOUR API KEY |
 |localhost:4001/api/events/ | DELETE | DELETE EVENTS |  YOUR API KEY |
 
+> Body args :  
+
+> CREATE EVENT :
+>>  {
+>> "title":"Proyecto Pendiente  ",
+>> "start": 1,
+>> "end":100,
+>> "notas": "programar mucho"
+>> }  
+
+> REFRESH EVENTS :
+>> {
+    "title": "Cumpleaños jefe!!!!",
+            "start": "1970-01-01T00:00:00.001Z",
+            "end": "1970-01-01T00:01:40.000Z",
+            "notes" : "holamundo1!!!"
+            }  
 
 ``` 
 project tree
