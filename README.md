@@ -11,7 +11,22 @@ Allows to create, update and delete users on a firebase authorization sistem
 4. Configure the local host port, the jwt key, and the mongoose DB url on the server, on the **./database/config.js** file  
 
 ![Config env variables](/assets/config_enviroment_variables.png)
-5. 
+
+5. Using the path, open and run the server, at this point it is able to test using postman or another  API  tester directly
+
+> Requests:
+
+| URL | METHOD | USAGE | KEY |
+| --- | --- | --- | --- |
+| localhost:4001/api/auth/new | POST | NEW USER | NO NEEDED | 
+| localhost:4001/api/auth/log | POST |LOG USER | NO NEEDED |
+|localhost:4001/api/auth/renew | GET | AUTO RENEW TOKEN | NO NEEDED |
+|localhost:4001/api/events | GET | GET EVENTS | NO NEEDED |
+|localhost:4001/api/events/ | POST | CREATE EVENTS | NO NEEDED |
+|localhost:4001/api/events/ | PUT |POST  REFRESH EVENTS |  YOUR API KEY |
+|localhost:4001/api/events/ | DELETE | DELETE EVENTS |  YOUR API KEY |
+
+
 ``` 
 project tree
 main
