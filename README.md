@@ -18,13 +18,13 @@ Allows to create, update and delete users on a firebase authorization sistem
 
 | URL | METHOD | USAGE | KEY |
 | --- | --- | --- | --- |
-| localhost:4001/api/auth/new | POST | NEW USER | NO NEEDED | 
-| localhost:4001/api/auth/log | POST |LOG USER | NO NEEDED |
-|localhost:4001/api/auth/renew | GET | AUTO RENEW TOKEN | NO NEEDED |
-|localhost:4001/api/events | GET | GET EVENTS | NO NEEDED |
-|localhost:4001/api/events/ | POST | CREATE EVENTS | NO NEEDED |
-|localhost:4001/api/events/ | PUT |POST  REFRESH EVENTS |  YOUR API KEY |
-|localhost:4001/api/events/ | DELETE | DELETE EVENTS |  YOUR API KEY |
+| localhost:5500/api/auth/new | POST | NEW USER | NO NEEDED | 
+| localhost:5500/api/auth/log | POST |LOG USER | NO NEEDED |
+|localhost:5500/api/auth/renew | GET | AUTO RENEW TOKEN | NO NEEDED |
+|localhost:5500/api/events | GET | GET EVENTS | NO NEEDED |
+|localhost:5500/api/events/ | POST | CREATE EVENTS | NO NEEDED |
+|localhost:5500/api/events/ | PUT |POST  REFRESH EVENTS |  YOUR API KEY |
+|localhost:5500/api/events/ | DELETE | DELETE EVENTS |  YOUR API KEY |
 
 > Body args :  
 
